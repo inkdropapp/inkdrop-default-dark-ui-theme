@@ -1,9 +1,9 @@
 {
-  "name": "default-light-ui",
+  "name": "default-dark-ui",
   "version": "0.1.0",
   "theme": "ui",
   "styleSheets": ["theme.css"],
-  "description": "A default light UI theme",
+  "description": "A default dark UI theme",
   "scripts": {
     "run": "gulp"
   },
