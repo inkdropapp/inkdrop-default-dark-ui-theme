@@ -662,6 +662,22 @@ input::selection {
 /*******************************
          Site Overrides
 *******************************/
+
+body.win32::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.win32::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-background);
+}
+
+body.win32::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-background);
+}
+
+body.win32::-webkit-scrollbar-thumb:window-inactive {
+  background: transparent;
+}
 /*
 
 ████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗

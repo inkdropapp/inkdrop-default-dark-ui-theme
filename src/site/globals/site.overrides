@@ -1,3 +1,18 @@
 /*******************************
          Site Overrides
 *******************************/
+
+body.win32 {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-background);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-background);
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: transparent; 
+  }
+}
