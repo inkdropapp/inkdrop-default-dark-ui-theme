@@ -663,23 +663,23 @@ input::selection {
          Site Overrides
 *******************************/
 
-body.win32::-webkit-scrollbar,
-body.linux::-webkit-scrollbar {
+body.win32 ::-webkit-scrollbar,
+body.linux ::-webkit-scrollbar {
   width: 12px;
 }
 
-body.win32::-webkit-scrollbar-track,
-body.linux::-webkit-scrollbar-track {
+body.win32 ::-webkit-scrollbar-track,
+body.linux ::-webkit-scrollbar-track {
   background: var(--scrollbar-track-background);
 }
 
-body.win32::-webkit-scrollbar-thumb,
-body.linux::-webkit-scrollbar-thumb {
+body.win32 ::-webkit-scrollbar-thumb,
+body.linux ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-background);
 }
 
-body.win32::-webkit-scrollbar-thumb:window-inactive,
-body.linux::-webkit-scrollbar-thumb:window-inactive {
+body.win32 ::-webkit-scrollbar-thumb:window-inactive,
+body.linux ::-webkit-scrollbar-thumb:window-inactive {
   background: transparent;
 }
 /*

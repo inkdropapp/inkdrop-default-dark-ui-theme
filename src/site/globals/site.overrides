@@ -3,16 +3,16 @@
 *******************************/
 
 body.win32, body.linux {
-  &::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 12px;
   }
-  &::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: var(--scrollbar-track-background);
   }
-  &::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-background);
   }
-  &::-webkit-scrollbar-thumb:window-inactive {
+  ::-webkit-scrollbar-thumb:window-inactive {
     background: transparent; 
   }
 }
