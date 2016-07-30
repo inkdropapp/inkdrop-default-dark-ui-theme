@@ -24787,7 +24787,7 @@ a.ui.card:hover,
   width: 17px;
   height: 17px;
   content: '';
-  background: #3C3C3C;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 0.21428571rem;
   -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
@@ -24846,7 +24846,7 @@ a.ui.card:hover,
 
 .ui.checkbox .box:hover::before,
 .ui.checkbox label:hover::before {
-  background: #3C3C3C;
+  background: rgba(0, 0, 0, 0.2);
   border-color: rgba(34, 36, 38, 0.35);
 }
 
@@ -24899,7 +24899,7 @@ a.ui.card:hover,
 
 .ui.checkbox input:checked ~ .box:before,
 .ui.checkbox input:checked ~ label:before {
-  background: #3C3C3C;
+  background: rgba(0, 0, 0, 0.2);
   border-color: rgba(34, 36, 38, 0.35);
 }
 
@@ -24915,7 +24915,7 @@ a.ui.card:hover,
 
 .ui.checkbox input:not([type=radio]):indeterminate ~ .box:before,
 .ui.checkbox input:not([type=radio]):indeterminate ~ label:before {
-  background: #3C3C3C;
+  background: rgba(0, 0, 0, 0.2);
   border-color: rgba(34, 36, 38, 0.35);
 }
 
@@ -25066,7 +25066,7 @@ a.ui.card:hover,
 
 .ui.radio.checkbox input:checked ~ .box:before,
 .ui.radio.checkbox input:checked ~ label:before {
-  background-color: #3C3C3C;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .ui.radio.checkbox input:checked ~ .box:after,
