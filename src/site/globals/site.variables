@@ -2,6 +2,143 @@
      User Global Variables
 *******************************/
 
-@primaryColor: #4F8EFF;
+@headerFont        : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@red              : #DB2828;
+@orange           : #F2711C;
+@yellow           : #FBBD08;
+@olive            : #B5CC18;
+@green            : #21BA45;
+@teal             : #00B5AD;
+@blue             : #2185D0;
+@violet           : #6435C9;
+@purple           : #A333C8;
+@pink             : #E03997;
+@brown            : #A5673F;
+@grey             : #767676;
+@black            : #F9FAFB;
+
+/*---  Light Colors  ---*/
+@lightRed         : #FF695E;
+@lightOrange      : #FF851B;
+@lightYellow      : #FFE21F;
+@lightOlive       : #D9E778;
+@lightGreen       : #2ECC40;
+@lightTeal        : #6DFFFF;
+@lightBlue        : #54C8FF;
+@lightViolet      : #A291FB;
+@lightPurple      : #DC73FF;
+@lightPink        : #FF8EDF;
+@lightBrown       : #D67C1C;
+@lightGrey        : #DCDDDE;
+@lightBlack       : #545454;
+
+/*---   Neutrals  ---*/
+@fullBlack        : #FFFFFF;
+@offWhite         : #444444;
+@darkWhite        : #FFFFFF - #F3F4F5;
+@midWhite         : #FFFFFF - #DCDDDE;
+@white            : #3C3C3C;
+
+/*--- Colored Backgrounds ---*/
+@redBackground    : #FFE8E6;
+@orangeBackground : #FFEDDE;
+@yellowBackground : #FFF8DB;
+@oliveBackground  : #FBFDEF;
+@greenBackground  : #E5F9E7;
+@tealBackground   : #E1F7F7;
+@blueBackground   : #DFF0FF;
+@violetBackground : #EAE7FF;
+@purpleBackground : #F6E7FF;
+@pinkBackground   : #FFE3FB;
+@brownBackground  : #F1E2D3;
+
+
+@primaryColor: #6987AF;
+@primaryColorFocus    : @primaryColor;
 @linkHoverColor: @primaryColor;
 @sidebarBackground: #171A21;
+
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground      : #3D3D3D;
+@textColor           : #DDDDDD;
+
+/*-------------------
+  Highlighted Text
+--------------------*/
+
+@highlightBackground      : #FFFFFF - #CCE2FF;
+@inputHighlightBackground : #FFFFFF - rgba(100, 100, 100, 0.4);
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+@darkTextColor               : rgba(255, 255, 255, 0.95);
+@mutedTextColor              : rgba(255, 255, 255, 0.6);
+@lightTextColor              : rgba(255, 255, 255, 0.50);
+
+@unselectedTextColor         : rgba(255, 255, 255, 0.4);
+@hoveredTextColor            : rgba(255, 255, 255, 0.8);
+@pressedTextColor            : rgba(255, 255, 255, 0.9);
+@selectedTextColor           : rgba(255, 255, 255, 0.95);
+@disabledTextColor           : rgba(255, 255, 255, 0.2);
+
+@invertedTextColor           : rgba(0, 0, 0, 0.9);
+@invertedMutedTextColor      : rgba(0, 0, 0, 0.8);
+@invertedLightTextColor      : rgba(0, 0, 0, 0.7);
+@invertedUnselectedTextColor : rgba(0, 0, 0, 0.5);
+@invertedHoveredTextColor    : rgba(0, 0, 0, 1);
+@invertedPressedTextColor    : rgba(0, 0, 0, 1);
+@invertedSelectedTextColor   : rgba(0, 0, 0, 1);
+@invertedDisabledTextColor   : rgba(0, 0, 0, 0.2);
+
+/*-------------------
+      Side Bar
+--------------------*/
+@sidebarBackground     : #3D3D3D;
+@sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
+@sidebarMenuSectionColor: @lightTextColor;
+@sidebarMenuItemColor  : @textColor;
+@sidebarMenuActionColor : @lightTextColor;
+@sidebarMenuActionHoverColor : @textColor;
+@sidebarSyncStatusViewBackground: #333;
+@sidebarSyncStatusViewTextColor: @textColor;
+@sidebarSyncStatusViewDetailColor: @lightTextColor;
+
+/*-------------------
+      Scroll Bar
+--------------------*/
+@scrollbarTrackBackground: rgba(0,0,0,0.3);
+@scrollbarThumbBackground: rgba(255,255,255,0.4);
+
+/*-------------------
+      Note List Bar
+--------------------*/
+@noteListBarBackground: #444444;
+@noteListViewItemColor: @mutedTextColor;
+@noteListViewItemSeparatorBorder: 1px solid var(--white-down);
+@noteListViewItemDateColor: @primaryColor;
+@noteListViewItemTagColor: @primaryColor;
+@noteListViewItemActiveBackground: @primaryColorFocus;
+@noteListViewItemActiveColor: @textColor;
+@noteListViewItemActiveDateColor: @textColor;
+@noteListViewItemActiveTagColor: @textColor;
+@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteSearchBarBorderBottom: 1px solid var(--white-down);
+
+/*-------------------
+      Preferences
+--------------------*/
+@preferencesSidebarBackground: rgb(245, 245, 244);
+
