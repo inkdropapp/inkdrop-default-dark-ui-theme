@@ -8,7 +8,6 @@
  * http://opensource.org/licenses/MIT
  *
  */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 /*!
  * # Semantic UI 2.2.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -686,7 +685,7 @@ input::selection {
   --header-font: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   --page-font: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   --google-font-name: 'Lato';
-  --import-google-fonts: true;
+  --import-google-fonts: false;
   --google-font-sizes: '400,700,400italic,700italic';
   --google-subset: 'latin';
   --google-protocol: 'https://';
