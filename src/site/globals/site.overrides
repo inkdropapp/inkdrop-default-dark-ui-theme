@@ -2,7 +2,7 @@
          Site Overrides
 *******************************/
 
-body.win32 {
+body.win32, body.linux {
   &::-webkit-scrollbar {
     width: 12px;
   }
