@@ -12,7 +12,7 @@
 
 /*---  Colors  ---*/
 @red              : #DB2828;
-@orange           : #F2711C;
+@orange           : #C06D36;
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
@@ -42,10 +42,10 @@
 
 /*---   Neutrals  ---*/
 @fullBlack        : #FFFFFF;
-@offWhite         : #444444;
-@darkWhite        : #555555;
-@midWhite         : #666666;
-@white            : #3C3C3C;
+@offWhite         : #34393D;
+@darkWhite        : #4B5257;
+@midWhite         : #666E74;
+@white            : #2E3235;
 
 /*--- Colored Backgrounds ---*/
 @redBackground    : #FFE8E6;
@@ -61,17 +61,16 @@
 @brownBackground  : #F1E2D3;
 
 
-@primaryColor: #6987AF;
+@primaryColor: @orange;
 @primaryColorFocus    : @primaryColor;
 @linkHoverColor: @primaryColor;
-@sidebarBackground: #171A21;
 
 
 /*-------------------
         Page
 --------------------*/
 
-@pageBackground      : #3D3D3D;
+@pageBackground      : #2E3235;
 @textColor           : #DDDDDD;
 
 /*-------------------
@@ -123,22 +122,22 @@
 
 @circularRadius                : 500rem;
 
-@borderColor               : rgba(34, 36, 38, 0.15);
-@strongBorderColor         : rgba(34, 36, 38, 0.22);
-@internalBorderColor       : rgba(34, 36, 38, 0.1);
-@selectedBorderColor       : rgba(34, 36, 38, 0.35);
-@strongSelectedBorderColor : rgba(34, 36, 38, 0.5);
-@disabledBorderColor       : rgba(34, 36, 38, 0.5);
+@borderColor               : rgba(24, 26, 28, 0.45);
+@strongBorderColor         : rgba(24, 26, 28, 0.22);
+@internalBorderColor       : rgba(24, 26, 28, 0.1);
+@selectedBorderColor       : rgba(24, 26, 28, 0.35);
+@strongSelectedBorderColor : rgba(24, 26, 28, 0.5);
+@disabledBorderColor       : rgba(24, 26, 28, 0.5);
 
 @solidInternalBorderColor  : #333333;
-@solidBorderColor          : #303030;
+@solidBorderColor          : #1B1C1E;
 @solidSelectedBorderColor  : #222222;
 
 @whiteBorderColor              : rgba(0, 0, 0, 0.1);
 @selectedWhiteBorderColor      : rgba(0, 0, 0, 0.8);
 
-@solidWhiteBorderColor         : #555555;
-@selectedSolidWhiteBorderColor : #999999;
+@solidWhiteBorderColor         : #34393D;
+@selectedSolidWhiteBorderColor : #4D5B66;
 
 
 /*--------------
@@ -159,13 +158,13 @@
 /*-------------------
       Side Bar
 --------------------*/
-@sidebarBackground     : #3D3D3D;
+@sidebarBackground     : @pageBackground;
 @sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
 @sidebarMenuSectionColor: @lightTextColor;
 @sidebarMenuItemColor  : @textColor;
 @sidebarMenuActionColor : @lightTextColor;
 @sidebarMenuActionHoverColor : @textColor;
-@sidebarSyncStatusViewBackground: #333;
+@sidebarSyncStatusViewBackground: #26292C;
 @sidebarSyncStatusViewTextColor: @textColor;
 @sidebarSyncStatusViewDetailColor: @lightTextColor;
 
@@ -178,7 +177,7 @@
 /*-------------------
       Note List Bar
 --------------------*/
-@noteListBarBackground: #444444;
+@noteListBarBackground: #34393D;
 @noteListViewItemColor: @mutedTextColor;
 @noteListViewItemSeparatorBorder: 1px solid @white;
 @noteListViewItemDateColor: @primaryColor;
