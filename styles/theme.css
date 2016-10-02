@@ -5457,6 +5457,28 @@ input::selection {
 /*******************************
          Site Overrides
 *******************************/
+
+/* Standard Basic Inverted */
+
+.ui.basic.inverted.buttons .button,
+.ui.basic.inverted.button {
+  color: #DDDDDD !important;
+}
+
+.ui.basic.inverted.buttons .button:hover,
+.ui.basic.inverted.button:hover {
+  color: #FFFFFF !important;
+}
+
+.ui.basic.inverted.buttons .button:focus,
+.ui.basic.inverted.button:focus {
+  color: #FFFFFF !important;
+}
+
+.ui.basic.inverted.buttons .button:active,
+.ui.basic.inverted.button:active {
+  color: #FFFFFF !important;
+}
 /*!
  * # Semantic UI 2.2.2 - Container
  * http://github.com/semantic-org/semantic-ui/
@@ -27625,7 +27647,7 @@ select.ui.dropdown {
   border: none;
   border-radius: 0em;
   box-shadow: none !important;
-  color: #2E3235;
+  color: #DDDDDD;
 }
 
 .ui.basic.modal > .header,
@@ -27635,7 +27657,7 @@ select.ui.dropdown {
 }
 
 .ui.basic.modal > .header {
-  color: #2E3235;
+  color: #DDDDDD;
 }
 
 .ui.basic.modal > .close {

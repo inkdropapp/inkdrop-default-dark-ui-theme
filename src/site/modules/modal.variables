@@ -7,3 +7,5 @@
 @contentBackground: @white;
 @actionBackground: @offWhite;
 
+@basicModalHeaderColor: @textColor;
+@basicModalColor: @textColor;
