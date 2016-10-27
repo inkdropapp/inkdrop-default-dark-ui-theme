@@ -1497,6 +1497,13 @@ input::selection {
         Preferences
   --------------------*/
   --preferences-sidebar-background: #2E3235;
+  /*-------------------
+        Task Icons
+  --------------------*/
+  --task-icon-active: darkgray;
+  --task-icon-onhold: orange;
+  --task-icon-completed: limegreen;
+  --task-icon-dropped: lightcoral;
 }
 
 .page-preferences {
