@@ -20,7 +20,7 @@
   outline: none;
   border: none;
   vertical-align: baseline;
-  background: #222527 none;
+  background: #25282a none;
   color: #DDDDDD;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   margin: 0em 0.25em 0em 0em;
@@ -58,7 +58,7 @@
 ---------------*/
 
 .ui.button:hover {
-  background-color: #2E3235;
+  background-color: #292d30;
   background-image: none;
   -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(24, 26, 28, 0.45) inset;
           box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(24, 26, 28, 0.45) inset;
@@ -73,7 +73,7 @@
 ---------------*/
 
 .ui.button:focus {
-  background-color: #2E3235;
+  background-color: #292d30;
   color: rgba(255, 255, 255, 0.8);
   background-image: '' !important;
   -webkit-box-shadow: '' !important;
