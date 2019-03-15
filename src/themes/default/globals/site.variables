@@ -361,9 +361,9 @@
 @negativeTextColor       : #9F3A38;
 
 /* Info */
-@infoColor              : rgba(49, 204, 236, 1);
-@infoBackgroundColor    : rgba(49, 204, 236, 0.2);
-@infoBorderColor        : rgba(49, 204, 236, 1);
+@infoColor              : #31CCEC;
+@infoBackgroundColor    : #F8FFFF;
+@infoBorderColor        : #A9D5DE;
 @infoHeaderColor        : #0E566C;
 @infoTextColor          : #276F86;
 

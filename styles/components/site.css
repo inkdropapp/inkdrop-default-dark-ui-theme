@@ -489,9 +489,9 @@ input::selection {
   --negative-text-color: #9F3A38;
   
 /* Info */
-  --info-color: #31ccec;
-  --info-background-color: rgba(49, 204, 236, 0.2);
-  --info-border-color: #31ccec;
+  --info-color: #31CCEC;
+  --info-background-color: #F8FFFF;
+  --info-border-color: #A9D5DE;
   --info-header-color: #0E566C;
   --info-text-color: #276F86;
   
