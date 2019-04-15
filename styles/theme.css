@@ -1278,8 +1278,8 @@ input::selection {
         Disabled
    --------------------*/
   --disabled-opacity: 0.45;
-  --disabled-text-color: rgba(40, 40, 40, 0.3);
-  --inverted-disabled-text-color: rgba(225, 225, 225, 0.3);
+  --disabled-text-color: rgba(255, 255, 255, 0.2);
+  --inverted-disabled-text-color: rgba(0, 0, 0, 0.2);
   /*-------------------
           Hover
    --------------------*/
@@ -17289,12 +17289,12 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
-  color: rgba(225, 225, 225, 0.3) !important;
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*-------------------
@@ -19667,7 +19667,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.disabled.segment {
   opacity: 0.45;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /*--------------
@@ -20565,7 +20565,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps .disabled.step,
 .ui.steps .disabled.step .title,
 .ui.steps .disabled.step .description {
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .ui.steps .disabled.step:after {
@@ -24924,7 +24924,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .item.disabled:hover {
   cursor: default !important;
   background-color: transparent !important;
-  color: rgba(40, 40, 40, 0.3) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /*******************************
@@ -25995,7 +25995,7 @@ Floated Menu / Item
 
 .ui.inverted.menu .item.disabled,
 .ui.inverted.menu .item.disabled:hover {
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*--- Hover ---*/
@@ -27718,7 +27718,7 @@ Floated Menu / Item
 .ui.table tr.disabled:hover,
 .ui.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /*******************************
@@ -28340,7 +28340,7 @@ Floated Menu / Item
 
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .ui.sortable.table thead th:hover {
@@ -28414,7 +28414,7 @@ Floated Menu / Item
 .ui.inverted.table tr.disabled:hover td,
 .ui.inverted.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* Definition */

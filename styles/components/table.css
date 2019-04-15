@@ -386,7 +386,7 @@
 .ui.table tr.disabled:hover,
 .ui.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -921,7 +921,7 @@
 /* Hover */
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 .ui.sortable.table thead th:hover {
   background: rgba(255, 255, 255, 0.05);
@@ -985,7 +985,7 @@
 .ui.inverted.table tr.disabled:hover td,
 .ui.inverted.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* Definition */

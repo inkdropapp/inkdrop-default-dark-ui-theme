@@ -407,7 +407,7 @@
 .ui.steps .disabled.step,
 .ui.steps .disabled.step .title,
 .ui.steps .disabled.step .description {
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 .ui.steps .disabled.step:after {
   background: #2E3235;

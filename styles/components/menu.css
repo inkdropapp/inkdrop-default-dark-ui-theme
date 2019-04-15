@@ -469,7 +469,7 @@
 .ui.menu .item.disabled:hover {
   cursor: default !important;
   background-color: transparent !important;
-  color: rgba(40, 40, 40, 0.3) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 
@@ -1425,7 +1425,7 @@ Floated Menu / Item
 /* Disabled */
 .ui.inverted.menu .item.disabled,
 .ui.inverted.menu .item.disabled:hover {
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*--- Hover ---*/
