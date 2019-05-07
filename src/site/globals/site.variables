@@ -44,7 +44,10 @@
 @noteListViewItemActiveDateColor: @textColor;
 @noteListViewItemActiveTagColor: @textColor;
 @noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteSearchBarBackground: @noteListBarBackground;
 @noteSearchBarBorderBottom: 1px solid @white;
+@noteSearchBarInputBorder: none;
+@noteSearchBarInputBackground: @inputBackground;
 
 /*-------------------
       Header Note Menu
