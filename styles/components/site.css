@@ -617,7 +617,6 @@ input::selection {
   --loader-margin: -0.64285714em 0em 0em -0.64285714em;
   
 /* Rendered Scrollbar Width */
-  --scrollbar-width: 17px;
   
 /* Maximum Single Character Glyph Width, aka Capital "W" */
   --glyph-width: 1.1em;
@@ -1108,13 +1107,17 @@ input::selection {
   --sidebar-sync-status-view-background: #26292C;
   --sidebar-sync-status-view-text-color: #DDDDDD;
   --sidebar-sync-status-view-detail-color: rgba(255, 255, 255, 0.5);
+  --sidebar-scrollbar-width: 6px;
+  --sidebar-scrollbar-track-background: rgba(0, 0, 0, 0.02);
+  --sidebar-scrollbar-thumb-background: rgba(255, 255, 255, 0.1);
   
 /*-------------------
         Scroll Bar
   --------------------*/
 
-  --scrollbar-track-background: rgba(0, 0, 0, 0.3);
-  --scrollbar-thumb-background: rgba(255, 255, 255, 0.4);
+  --scrollbar-width: 6px;
+  --scrollbar-track-background: rgba(0, 0, 0, 0.02);
+  --scrollbar-thumb-background: rgba(255, 255, 255, 0.1);
   
 /*-------------------
         Note List Bar
