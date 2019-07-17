@@ -674,6 +674,11 @@ a:hover {
   color: #DDDDDD;
 }
 
+::-moz-selection {
+  background-color: #331d00;
+  color: #DDDDDD;
+}
+
 ::selection {
   background-color: #331d00;
   color: #DDDDDD;
@@ -683,6 +688,12 @@ a:hover {
 
 textarea::-webkit-selection,
 input::-webkit-selection {
+  background-color: #9b9b9b;
+  color: #DDDDDD;
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
   background-color: #9b9b9b;
   color: #DDDDDD;
 }
@@ -16613,8 +16624,8 @@ a.ui.basic.grey.label:hover {
 
 .ui.black.labels .label,
 .ui.black.label {
-  background-color: #F9FAFB !important;
-  border-color: #F9FAFB !important;
+  background-color: #1E2225 !important;
+  border-color: #1E2225 !important;
   color: #F9FAFB !important;
 }
 
@@ -16622,8 +16633,8 @@ a.ui.basic.grey.label:hover {
 
 .ui.black.labels .label:hover,
 a.ui.black.label:hover {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
   color: #F9FAFB !important;
 }
 
