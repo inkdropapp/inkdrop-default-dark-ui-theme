@@ -24145,7 +24145,7 @@ Floated Menu / Item
 .ui.vertical.menu {
   display: block;
   flex-direction: column;
-  background: #2E3235;
+  background: rgba(46, 50, 53, 0.7);
   box-shadow: 0px 1px 2px 0 rgba(24, 26, 28, 0.45);
 }
 
@@ -25838,6 +25838,10 @@ Floated Menu / Item
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.vertical.menu {
+  backdrop-filter: blur(10px);
+}
 
 /*******************************
          Site Overrides
@@ -33318,6 +33322,13 @@ select.ui.dropdown {
 
 .ui.dropdown > .dropdown.icon:before {
   content: '\f0d7';
+}
+
+/* Inline dropdown menu */
+
+.ui.inline.dropdown .menu {
+  background: rgba(46, 50, 53, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 /* Sub Menu */
