@@ -952,10 +952,14 @@
   --sidebar-sync-status-view-background: @sidebarSyncStatusViewBackground;
   --sidebar-sync-status-view-text-color: @sidebarSyncStatusViewTextColor;
   --sidebar-sync-status-view-detail-color: @sidebarSyncStatusViewDetailColor;
+  --sidebar-scrollbar-width: @sidebarScrollbarWidth;
+  --sidebar-scrollbar-track-background: @sidebarScrollbarTrackBackground;
+  --sidebar-scrollbar-thumb-background: @sidebarScrollbarThumbBackground;
 
   /*-------------------
         Scroll Bar
   --------------------*/
+  --scrollbar-width: @scrollbarWidth;
   --scrollbar-track-background: @scrollbarTrackBackground;
   --scrollbar-thumb-background: @scrollbarThumbBackground;
 
@@ -963,6 +967,9 @@
         Note List Bar
   --------------------*/
   --note-list-bar-background: @noteListBarBackground;
+  --note-list-bar-pinned-section-header-background: @noteListBarPinnedSectionHeaderBackground;
+  --note-list-bar-pinned-section-header-border-bottom: @noteListBarPinnedSectionHeaderBorderBottom;
+  --note-list-bar-pinned-section-footer-border-bottom: @noteListBarPinnedSectionFooterBorderBottom;
   --note-list-view-item-color: @noteListViewItemColor;
   --note-list-view-item-separator-border: @noteListViewItemSeparatorBorder;
   --note-list-view-item-date-color: @noteListViewItemDateColor;
@@ -972,13 +979,18 @@
   --note-list-view-item-active-date-color: @noteListViewItemActiveDateColor;
   --note-list-view-item-active-tag-color: @noteListViewItemActiveTagColor;
   --note-list-view-item-focus-inner-shadow: @noteListViewItemFocusInnerShadow;
+  --note-search-bar-background: @noteSearchBarBackground;
   --note-search-bar-border-bottom: @noteSearchBarBorderBottom;
+  --note-search-bar-input-border: @noteSearchBarInputBorder;
+  --note-search-bar-input-background: @noteSearchBarInputBackground;
 
   /*-------------------
         Header Note Menu
   --------------------*/
   --header-note-menu-background: @headerNoteMenuBackground;
   --header-note-menu-color: @headerNoteMenuColor;
+  --header-note-menu-action-item-active-background: @headerNoteMenuActionItemActiveBackground;
+  --header-note-menu-action-item-active-border: @headerNoteMenuActionItemActiveBorder;
   --header-note-menu-action-item-separator-border: @headerNoteMenuActionItemSeparatorBorder;
   --header-note-menu-encrypt-button-color: @headerNoteMenuEncryptButtonColor;
   --header-note-menu-encrypt-button-background: @headerNoteMenuEncryptButtonBackground;
