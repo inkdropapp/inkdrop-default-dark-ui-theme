@@ -1,63 +1,72 @@
-var console = require('better-console'),
-  config = require('./user'),
+var
+  console = require('better-console'),
+  config  = require('./user'),
   release = require('./project/release')
+;
+
+
 module.exports = {
-  banner: release.banner,
+
+  banner : release.banner,
 
   log: {
     created: function(file) {
-      return 'Created: ' + file
+      return 'Created: ' + file;
     },
     modified: function(file) {
-      return 'Modified: ' + file
+      return 'Modified: ' + file;
     }
   },
 
   filenames: {
-    concatenatedCSS: 'theme.css',
-    concatenatedJS: 'semantic.js',
-    concatenatedMinifiedCSS: 'theme.min.css',
-    concatenatedMinifiedJS: 'semantic.min.js',
-    concatenatedRTLCSS: 'semantic.rtl.css',
-    concatenatedMinifiedRTLCSS: 'semantic.rtl.min.css'
+    concatenatedCSS            : 'theme.css',
+    concatenatedJS             : 'semantic.js',
+    concatenatedMinifiedCSS    : 'theme.min.css',
+    concatenatedMinifiedJS     : 'semantic.min.js',
+    concatenatedRTLCSS         : 'semantic.rtl.css',
+    concatenatedMinifiedRTLCSS : 'semantic.rtl.min.css'
   },
 
   regExp: {
+
     comments: {
+
       // remove all comments from config files (.variable)
-      variables: {
-        in: /(\/\*[\s\S]+?\*\/+)[\s\S]+?\/\* End Config \*\//,
-        out: '$1'
+      variables : {
+        in  : /(\/\*[\s\S]+?\*\/+)[\s\S]+?\/\* End Config \*\//,
+        out : '$1',
       },
 
       // add version to first comment
       license: {
-        in: /(^\/\*[\s\S]+)(# Semantic UI )([\s\S]+?\*\/)/,
-        out: '$1$2' + release.version + ' $3'
+        in  : /(^\/\*[\s\S]+)(# Semantic UI )([\s\S]+?\*\/)/,
+        out : '$1$2' + release.version + ' $3'
       },
 
       // adds uniform spacing around comments
       large: {
-        in: /(\/\*\*\*\*[\s\S]+?\*\/)/gm,
-        out: '\n\n$1\n'
+        in  : /(\/\*\*\*\*[\s\S]+?\*\/)/mg,
+        out : '\n\n$1\n'
       },
       small: {
-        in: /(\/\*---[\s\S]+?\*\/)/gm,
-        out: '\n$1\n'
+        in  : /(\/\*---[\s\S]+?\*\/)/mg,
+        out : '\n$1\n'
       },
       tiny: {
-        in: /(\/\* [\s\S]+? \*\/)/gm,
-        out: '\n$1'
+        in  : /(\/\* [\s\S]+? \*\/)/mg,
+        out : '\n$1'
       }
     },
 
-    theme: /.*(\/|\\)themes(\/|\\).*?(?=(\/|\\))/gm
+    theme: /.*(\/|\\)themes(\/|\\).*?(?=(\/|\\))/mg
+
   },
 
   settings: {
+
     /* Remove Files in Clean */
     del: {
-      silent: true
+      silent : true
     },
 
     concatCSS: {
@@ -66,41 +75,43 @@ module.exports = {
 
     /* Comment Banners */
     header: {
-      title: release.title,
-      version: release.version,
-      repository: release.repository,
-      url: release.url
+      title      : release.title,
+      version    : release.version,
+      repository : release.repository,
+      url        : release.url
     },
 
     plumber: {
       less: {
         errorHandler: function(error) {
-          var regExp = {
-              variable: /@(\S.*?)\s/,
-              theme: /themes[\/\\]+(.*?)[\/\\].*/,
-              element: /[\/\\]([^\/\\*]*)\.overrides/
+          var
+            regExp = {
+              variable : /@(\S.*?)\s/,
+              theme    : /themes[\/\\]+(.*?)[\/\\].*/,
+              element  : /[\/\\]([^\/\\*]*)\.overrides/
             },
             theme,
             element
-          if (error.filename.match(/theme.less/)) {
-            if (error.line == 5) {
-              element = regExp.variable.exec(error.message)[1]
-              if (element) {
-                console.error('Missing theme.config value for ', element)
+          ;
+          console.error(error)
+          if(error.filename.match(/theme.less/)) {
+            if(error.line == 5) {
+              element  = regExp.variable.exec(error.message)[1];
+              if(element) {
+                console.error('Missing theme.config value for ', element);
               }
-              console.error(
-                'Most likely new UI was added in an update. You will need to add missing elements from theme.config.example'
-              )
+              console.error('Most likely new UI was added in an update. You will need to add missing elements from theme.config.example');
             }
-            if (error.line == 46) {
-              element = regExp.element.exec(error.message)[1]
-              theme = regExp.theme.exec(error.message)[1]
-              console.error(theme + ' is not an available theme for ' + element)
+            if(error.line == 46) {
+              element = regExp.element.exec(error.message)[1];
+              theme   = regExp.theme.exec(error.message)[1];
+              console.error(theme + ' is not an available theme for ' + element);
             }
-          } else {
-            console.log(error)
           }
-          this.emit('end')
+          else {
+            console.log(error);
+          }
+          this.emit('end');
         }
       }
     },
@@ -110,23 +121,23 @@ module.exports = {
 
     /* File Renames */
     rename: {
-      minJS: { extname: '.min.js' },
-      minCSS: { extname: '.min.css' },
-      rtlCSS: { extname: '.rtl.css' },
-      rtlMinCSS: { extname: '.rtl.min.css' }
+      minJS     : { extname : '.min.js' },
+      minCSS    : { extname : '.min.css' },
+      rtlCSS    : { extname : '.rtl.css' },
+      rtlMinCSS : { extname : '.rtl.min.css' }
     },
 
     /* Minified CSS Concat */
     minify: {
-      processImport: false,
-      restructuring: false,
-      keepSpecialComments: 1,
-      roundingPrecision: -1
+      processImport       : false,
+      restructuring       : false,
+      keepSpecialComments : 1,
+      roundingPrecision   : -1,
     },
 
     /* Minified JS Settings */
     uglify: {
-      mangle: true,
+      mangle   : true,
       output: {
         comments: 'some'
       }
@@ -134,18 +145,19 @@ module.exports = {
 
     /* Minified Concat CSS Settings */
     concatMinify: {
-      processImport: false,
-      restructuring: false,
-      keepSpecialComments: false,
-      roundingPrecision: -1
+      processImport       : false,
+      restructuring       : false,
+      keepSpecialComments : false,
+      roundingPrecision   : -1,
     },
 
     /* Minified Concat JS */
     concatUglify: {
-      mangle: true,
+      mangle   : true,
       output: {
         comments: 'some'
       }
     }
+
   }
-}
+};
