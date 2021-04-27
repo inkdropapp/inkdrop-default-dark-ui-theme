@@ -964,7 +964,7 @@ input::selection {
   --info-text-color: #276F86;
   /* Warning */
   --warning-color: #F2C037;
-  --warning-border-color: #C9BA9B;
+  --warning-border-color: #794B02;
   --warning-background-color: #FFFAF3;
   --warning-header-color: #794B02;
   --warning-text-color: #573A08;
@@ -26182,7 +26182,7 @@ Floated Menu / Item
 
 .ui.warning.message,
 .ui.attached.warning.message {
-  box-shadow: 0px 0px 0px 1px #C9BA9B inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 1px #794B02 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .ui.warning.message .header {
@@ -26761,7 +26761,7 @@ Floated Menu / Item
 
 .ui.table tr.warning,
 .ui.table td.warning {
-  box-shadow: 0px 0px 0px #C9BA9B inset;
+  box-shadow: 0px 0px 0px #794B02 inset;
 }
 
 .ui.table tr.warning,
