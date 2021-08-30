@@ -9,7 +9,7 @@ Read [the documentation](http://doc.inkdrop.info/manual/creating-a-theme) for de
 
 ```
 npm install
-gulp build
+npm build
 ```
 
 ## Which files to edit
