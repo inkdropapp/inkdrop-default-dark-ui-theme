@@ -71,7 +71,7 @@
       Preferences
 --------------------*/
 @preferencesSidebarBackground: @white;
-@preferencesSidebarItemActiveBackground: rgba(192, 109, 54, 0.2);
+@preferencesSidebarItemActiveBackground: #6987AF40;
 @preferencesViewBackground: @offWhite;
 
 /*-------------------
