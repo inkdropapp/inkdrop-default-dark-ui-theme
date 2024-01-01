@@ -58,6 +58,11 @@
 @noteSearchBarInputBackground: @inputBackground;
 
 /*-------------------
+      Editor
+--------------------*/
+@editorBackground: @pageBackground;
+
+/*-------------------
       Header Note Menu
 --------------------*/
 @headerNoteMenuBackground: transparent;
