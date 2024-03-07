@@ -24382,7 +24382,7 @@ Floated Menu / Item
   box-shadow: none !important;
   border: none;
   background: none transparent;
-  border-bottom: 1px solid #3B3C3E;
+  border-bottom: 1px solid rgba(24, 26, 28, 0.45);
 }
 
 .ui.tabular.fluid.menu {
@@ -24416,7 +24416,7 @@ Floated Menu / Item
   background: none #2E3235;
   color: rgba(255, 255, 255, 0.95);
   border-top-width: 1px;
-  border-color: #3B3C3E;
+  border-color: rgba(24, 26, 28, 0.45);
   font-weight: 600;
   margin-bottom: -1px;
   box-shadow: none;
@@ -24447,7 +24447,7 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-top: 1px solid #3B3C3E;
+  border-top: 1px solid rgba(24, 26, 28, 0.45);
 }
 
 .ui.bottom.tabular.menu .item {
@@ -24461,7 +24461,7 @@ Floated Menu / Item
 .ui.bottom.tabular.menu .active.item {
   background: none #2E3235;
   color: rgba(255, 255, 255, 0.95);
-  border-color: #3B3C3E;
+  border-color: rgba(24, 26, 28, 0.45);
   margin: -1px 0px 0px 0px;
   border-radius: 0px 0px 0.35714286rem 0.35714286rem !important;
 }
@@ -24473,7 +24473,7 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-right: 1px solid #3B3C3E;
+  border-right: 1px solid rgba(24, 26, 28, 0.45);
 }
 
 .ui.vertical.tabular.menu .item {
@@ -24487,7 +24487,7 @@ Floated Menu / Item
 .ui.vertical.tabular.menu .active.item {
   background: none #2E3235;
   color: rgba(255, 255, 255, 0.95);
-  border-color: #3B3C3E;
+  border-color: rgba(24, 26, 28, 0.45);
   margin: 0px -1px 0px 0px;
   border-radius: 0.35714286rem 0px 0px 0.35714286rem !important;
 }
@@ -24500,7 +24500,7 @@ Floated Menu / Item
   box-shadow: none !important;
   border-bottom: none;
   border-right: none;
-  border-left: 1px solid #3B3C3E;
+  border-left: 1px solid rgba(24, 26, 28, 0.45);
 }
 
 .ui.vertical.right.tabular.menu .item {
@@ -24514,7 +24514,7 @@ Floated Menu / Item
 .ui.vertical.right.tabular.menu .active.item {
   background: none #2E3235;
   color: rgba(255, 255, 255, 0.95);
-  border-color: #3B3C3E;
+  border-color: rgba(24, 26, 28, 0.45);
   margin: 0px 0px 0px -1px;
   border-radius: 0px 0.35714286rem 0.35714286rem 0px !important;
 }
