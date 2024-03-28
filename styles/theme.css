@@ -691,6 +691,10 @@ input::selection {
         Global Overrides
 *******************************/
 
+:root {
+  color-scheme: dark;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -15838,9 +15842,14 @@ a.ui.basic.yellow.label:hover {
 
 .ui.olive.labels .label,
 .ui.olive.label {
-  background-color: #B5CC18 !important;
-  border-color: #B5CC18 !important;
-  color: #F9FAFB !important;
+  --label-background-color: hsl(var(--hsl-lime-400) / 10%);
+  --label-border-color: hsl(var(--hsl-lime-400) / 20%);
+  --label-text-color: hsl(var(--hsl-lime-400));
+  --label-active-background-color: hsl(var(--hsl-lime-400) / 20%);
+  --label-active-border-color: hsl(var(--hsl-lime-400) / 30%);
+  --label-active-text-color: hsl(var(--hsl-lime-500));
+  --label-circular-background-color: hsl(var(--hsl-lime-400) / 30%);
+  --label-circular-border-color: hsl(var(--hsl-lime-400));
 }
 
 /* Link */
