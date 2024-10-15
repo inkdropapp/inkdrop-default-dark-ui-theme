@@ -2,7 +2,7 @@
   "name": "default-dark-ui",
   "version": "2.2.0",
   "theme": "ui",
-  "dark": true,
+  "themeAppearance": "dark",
   "description": "Default Dark UI Theme for Inkdrop",
   "styleSheets": [
     "theme.css"
