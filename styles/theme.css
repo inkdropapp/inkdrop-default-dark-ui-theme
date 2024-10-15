@@ -1285,7 +1285,7 @@
   --note-list-bar-pinned-section-header-border-bottom: none;
   --note-list-bar-pinned-section-footer-border-bottom: 4px solid #ccc;
   --note-list-view-item-color: var(--muted-text-color);
-  --note-list-view-item-separator-border: 1px solid var(--color-neutral-900);
+  --note-list-view-item-separator-border: 1px solid hsl(var(--hsl-neutral-800) / 75%);
   --note-list-view-item-date-color: var(--primary-color);
   --note-list-view-item-tag-color: var(--blue-focus);
   --note-list-view-item-selected-background: hsl(var(--hsl-blue-300) / 20%);
@@ -1342,8 +1342,8 @@
 
 body.acrylic-window {
   --page-background: transparent;
-  --editor-background: hsl(var(--hsl-black) / 20%);
+  --editor-background: hsl(var(--hsl-neutral-950) / 60%);
   --editor-drawer-background: hsl(var(--hsl-neutral-800));
-  --sidebar-background: hsl(var(--hsl-neutral-950) / 60%);
+  --sidebar-background: hsl(var(--hsl-black) / 10%);
   --inline-dropdown-menu-background: hsl(var(--hsl-neutral-900));
 }
