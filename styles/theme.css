@@ -1,23 +1,5 @@
 :root {
   /*-------------------
-      Base Sizes
-  --------------------*/
-  /* This is the single variable that controls them all */
-  --em-size: 14px;
-  /* The size of page text  */
-  --font-size: 14px;
-
-  /*-------------------
-    Border Radius
-  --------------------*/
-  /* See Power-user section below
-    for explanation of @px variables
-  */
-  --relative-border-radius: 0.35714286em;
-  --absolute-border-radius: 0.35714286rem;
-  --default-border-radius: 0.35714286rem;
-
-  /*-------------------
     Brand Colors
   --------------------*/
   --primary-color: hsl(var(--hsl-blue-400) / 80%);
@@ -26,32 +8,16 @@
   --light-secondary-color: var(--color-neutral-700);
 
   /*--------------
-  Page Heading
-  ---------------*/
-  --header-font-weight: 600;
-  --header-line-height: 1.28571429em;
-  --h1: 2rem;
-  --h2: 1.71428571rem;
-  --h3: 1.28571429rem;
-  --h4: 1.07142857rem;
-  --h5: 1rem;
-
-  /*--------------
     Form Input
   ---------------*/
   /* This adjusts the default form input across all elements */
   --input-background: var(--color-neutral-900);
-  --input-vertical-padding: 0.78571429em;
-  --input-horizontal-padding: 1em;
-  --input-padding: 0.78571429em 1em;
   /* Input Text Color */
   --input-color: hsl(var(--hsl-neutral-50) / 85%);
   --input-placeholder-color: hsl(var(--hsl-neutral-200) / 25%);
   --input-placeholder-focus-color: hsl(var(--hsl-neutral-300) / 35%);
   --input-error-placeholder-color: var(--negative-text-color);
   --input-error-placeholder-focus-color: hsl(var(--hsl-red-200) / 90%);
-  /* Line Height Default For Inputs in Browser */
-  --input-line-height: 1.21428571em;
 
   /*-------------------
     Focused Input
@@ -63,41 +29,13 @@
   --focused-form-muted-border-color: hsl(var(--hsl-sky-300) / 40%);
   /*#96C8DA; */
   --unfocused-outline-color: transparent;
-  --unfocused-outline-offset: 0.4rem;
-  --focused-outline-style: solid;
-  --focused-outline-width: 0.14285714rem;
   --focused-outline-color: hsl(var(--hsl-sky-300) / 30%);
-  --focused-outline-offset: 0rem;
-
-  /*-------------------
-        Sizes
-  --------------------*/
-  /*
-    Sizes are all expressed in terms of 14px/em (default em)
-    This ensures these "ratios" remain constant despite changes in EM
-  */
-  --mini-size: 0.78571429;
-  --tiny-size: 0.85714286;
-  --small-size: 0.92857143;
-  --medium-size: 1;
-  --large-size: 1.14285714;
-  --big-size: 1.28571429;
-  --huge-size: 1.42857143;
-  --massive-size: 1.71428571;
 
   /*-------------------
         Page
   --------------------*/
   --page-background: var(--color-neutral-950);
-  --page-overflow-x: hidden;
-  --line-height: 1.4285em;
   --text-color: hsl(var(--hsl-neutral-50) / 87%);
-
-  /*-------------------
-      Paragraph
-  --------------------*/
-  --paragraph-margin: 0em 0em 1em;
-  --paragraph-line-height: 1.4285em;
 
   /*-------------------
         Links
@@ -118,33 +56,10 @@
   /*-------------------
         Loader
   --------------------*/
-  --loader-size: 1.28571429em;
-  --loader-speed: 0.6s;
-  --loader-line-width: 0.2em;
   --loader-fill-color: rgba(0, 0, 0, 0.1);
   --loader-line-color: #767676;
   --inverted-loader-fill-color: rgba(255, 255, 255, 0.15);
   --inverted-loader-line-color: #FFFFFF;
-
-  /*-------------------
-          Grid
-  --------------------*/
-  --column-count: 16;
-
-  /*-------------------
-      Transitions
-  --------------------*/
-  --default-duration: 0.1s;
-  --default-easing: ease;
-
-  /*-------------------
-      Breakpoints
-  --------------------*/
-  --mobile-breakpoint: 320px;
-  --tablet-breakpoint: 768px;
-  --computer-breakpoint: 992px;
-  --large-monitor-breakpoint: 1200px;
-  --widescreen-monitor-breakpoint: 1920px;
 
   /*-------------------
       Site Colors
@@ -285,44 +200,6 @@
   --warning-header-color: hsl(var(--hsl-amber-300) / 90%);
   --warning-text-color: hsl(var(--hsl-amber-100) / 90%);
   /*-------------------
-        Em Sizes
-  --------------------*/
-  /*
-    This rounds @size values to the closest pixel then expresses that value in (r)em.
-    This ensures all size values round to exact pixels
-  */
-  --mini: 0.78571429rem;
-  --tiny: 0.85714286rem;
-  --small: 0.92857143rem;
-  --medium: 1rem;
-  --large: 1.14285714rem;
-  --big: 1.28571429rem;
-  --huge: 1.42857143rem;
-  --massive: 1.71428571rem;
-  /* em */
-  --relative-mini: 0.78571429em;
-  --relative-tiny: 0.85714286em;
-  --relative-small: 0.92857143em;
-  --relative-medium: 1em;
-  --relative-large: 1.14285714em;
-  --relative-big: 1.28571429em;
-  --relative-huge: 1.42857143em;
-  --relative-massive: 1.71428571em;
-  /* rem */
-  --absolute-mini: 0.78571429rem;
-  --absolute-tiny: 0.85714286rem;
-  --absolute-small: 0.92857143rem;
-  --absolute-medium: 1rem;
-  --absolute-large: 1.14285714rem;
-  --absolute-big: 1.28571429rem;
-  --absolute-huge: 1.42857143rem;
-  --absolute-massive: 1.71428571rem;
-  /*-------------------
-        Icons
-  --------------------*/
-  /* Maximum Glyph Width of Icon */
-  --icon-width: 1.18em;
-  /*-------------------
       Neutral Text
   --------------------*/
   --dark-text-color: hsl(var(--hsl-neutral-50) / 40%);
@@ -352,7 +229,6 @@
   --strong-selected-border-color: hsl(var(--hsl-neutral-100) / 50%);
   --disabled-border-color: hsl(var(--hsl-neutral-100) / 50%);
 
-  /* TODO: ????????? */
   --solid-internal-border-color: var(--color-neutral-800);
   --solid-border-color: var(--color-zinc-700);
   --solid-selected-border-color: var(--color-neutral-600);
@@ -363,20 +239,6 @@
   /*-------------------
     Derived Values
   --------------------*/
-  /* Loaders Position Offset */
-  --loader-offset: -0.64285714em;
-  --loader-margin: -0.64285714em 0em 0em -0.64285714em;
-  /* Maximum Single Character Glyph Width, aka Capital "W" */
-  --glyph-width: 1.1em;
-  /* Used to match floats with text */
-  --line-height-offset: 0.21425em;
-  --header-line-height-offset: 0.14285714em;
-  /* Header Spacing */
-  --header-top-margin: calc(2rem - 0.1428571428571429em);
-  --header-bottom-margin: 1rem;
-  --header-margin: calc(2rem - 0.1428571428571429em) 0em 1rem;
-  /* Minimum Mobile Width */
-  --page-min-width: 320px;
   /* Positive / Negative Dupes */
   --success-background-color: var(--positive-background-color);
   --success-color: var(--positive-color);
@@ -388,192 +250,9 @@
   --error-border-color: var(--negative-border-color);
   --error-header-color: var(--negative-header-color);
   --error-text-color: var(--negative-text-color);
-  /* Responsive */
-  --largest-mobile-screen: 767px;
-  --largest-tablet-screen: 991px;
-  --largest-small-monitor: 1199px;
-  --largest-large-monitor: 1919px;
-  /*-------------------
-    Exact Pixel Values
-  --------------------*/
-  /*
-    These are used to specify exact pixel values in em
-    for things like borders that remain constantly
-    sized as emSize adjusts
-
-    Since there are many more sizes than names for sizes,
-    these are named by their original pixel values.
-
-  */
-  --1px: 0.07142857rem;
-  --2px: 0.14285714rem;
-  --3px: 0.21428571rem;
-  --4px: 0.28571429rem;
-  --5px: 0.35714286rem;
-  --6px: 0.42857143rem;
-  --7px: 0.5rem;
-  --8px: 0.57142857rem;
-  --9px: 0.64285714rem;
-  --10px: 0.71428571rem;
-  --11px: 0.78571429rem;
-  --12px: 0.85714286rem;
-  --13px: 0.92857143rem;
-  --14px: 1rem;
-  --15px: 1.07142857rem;
-  --16px: 1.14285714rem;
-  --17px: 1.21428571rem;
-  --18px: 1.28571429rem;
-  --19px: 1.35714286rem;
-  --20px: 1.42857143rem;
-  --21px: 1.5rem;
-  --22px: 1.57142857rem;
-  --23px: 1.64285714rem;
-  --24px: 1.71428571rem;
-  --25px: 1.78571429rem;
-  --26px: 1.85714286rem;
-  --27px: 1.92857143rem;
-  --28px: 2rem;
-  --29px: 2.07142857rem;
-  --30px: 2.14285714rem;
-  --31px: 2.21428571rem;
-  --32px: 2.28571429rem;
-  --33px: 2.35714286rem;
-  --34px: 2.42857143rem;
-  --35px: 2.5rem;
-  --36px: 2.57142857rem;
-  --37px: 2.64285714rem;
-  --38px: 2.71428571rem;
-  --39px: 2.78571429rem;
-  --40px: 2.85714286rem;
-  --41px: 2.92857143rem;
-  --42px: 3rem;
-  --43px: 3.07142857rem;
-  --44px: 3.14285714rem;
-  --45px: 3.21428571rem;
-  --46px: 3.28571429rem;
-  --47px: 3.35714286rem;
-  --48px: 3.42857143rem;
-  --49px: 3.5rem;
-  --50px: 3.57142857rem;
-  --51px: 3.64285714rem;
-  --52px: 3.71428571rem;
-  --53px: 3.78571429rem;
-  --54px: 3.85714286rem;
-  --55px: 3.92857143rem;
-  --56px: 4rem;
-  --57px: 4.07142857rem;
-  --58px: 4.14285714rem;
-  --59px: 4.21428571rem;
-  --60px: 4.28571429rem;
-  --61px: 4.35714286rem;
-  --62px: 4.42857143rem;
-  --63px: 4.5rem;
-  --64px: 4.57142857rem;
-  --relative1px: 0.07142857em;
-  --relative2px: 0.14285714em;
-  --relative3px: 0.21428571em;
-  --relative4px: 0.28571429em;
-  --relative5px: 0.35714286em;
-  --relative6px: 0.42857143em;
-  --relative7px: 0.5em;
-  --relative8px: 0.57142857em;
-  --relative9px: 0.64285714em;
-  --relative10px: 0.71428571em;
-  --relative11px: 0.78571429em;
-  --relative12px: 0.85714286em;
-  --relative13px: 0.92857143em;
-  --relative14px: 1em;
-  --relative15px: 1.07142857em;
-  --relative16px: 1.14285714em;
-  --relative17px: 1.21428571em;
-  --relative18px: 1.28571429em;
-  --relative19px: 1.35714286em;
-  --relative20px: 1.42857143em;
-  --relative21px: 1.5em;
-  --relative22px: 1.57142857em;
-  --relative23px: 1.64285714em;
-  --relative24px: 1.71428571em;
-  --relative25px: 1.78571429em;
-  --relative26px: 1.85714286em;
-  --relative27px: 1.92857143em;
-  --relative28px: 2em;
-  --relative29px: 2.07142857em;
-  --relative30px: 2.14285714em;
-  --relative31px: 2.21428571em;
-  --relative32px: 2.28571429em;
-  --relative33px: 2.35714286em;
-  --relative34px: 2.42857143em;
-  --relative35px: 2.5em;
-  --relative36px: 2.57142857em;
-  --relative37px: 2.64285714em;
-  --relative38px: 2.71428571em;
-  --relative39px: 2.78571429em;
-  --relative40px: 2.85714286em;
-  --relative41px: 2.92857143em;
-  --relative42px: 3em;
-  --relative43px: 3.07142857em;
-  --relative44px: 3.14285714em;
-  --relative45px: 3.21428571em;
-  --relative46px: 3.28571429em;
-  --relative47px: 3.35714286em;
-  --relative48px: 3.42857143em;
-  --relative49px: 3.5em;
-  --relative50px: 3.57142857em;
-  --relative51px: 3.64285714em;
-  --relative52px: 3.71428571em;
-  --relative53px: 3.78571429em;
-  --relative54px: 3.85714286em;
-  --relative55px: 3.92857143em;
-  --relative56px: 4em;
-  --relative57px: 4.07142857em;
-  --relative58px: 4.14285714em;
-  --relative59px: 4.21428571em;
-  --relative60px: 4.28571429em;
-  --relative61px: 4.35714286em;
-  --relative62px: 4.42857143em;
-  --relative63px: 4.5em;
-  --relative64px: 4.57142857em;
-  /* Columns */
-  --one-wide: 6.25%;
-  --two-wide: 12.5%;
-  --three-wide: 18.75%;
-  --four-wide: 25%;
-  --five-wide: 31.25%;
-  --six-wide: 37.5%;
-  --seven-wide: 43.75%;
-  --eight-wide: 50%;
-  --nine-wide: 56.25%;
-  --ten-wide: 62.5%;
-  --eleven-wide: 68.75%;
-  --twelve-wide: 75%;
-  --thirteen-wide: 81.25%;
-  --fourteen-wide: 87.5%;
-  --fifteen-wide: 93.75%;
-  --sixteen-wide: 100%;
-  --one-column: 100%;
-  --two-column: 50%;
-  --three-column: 33.33333333%;
-  --four-column: 25%;
-  --five-column: 20%;
-  --six-column: 16.66666667%;
-  --seven-column: 14.28571429%;
-  --eight-column: 12.5%;
-  --nine-column: 11.11111111%;
-  --ten-column: 10%;
-  --eleven-column: 9.09090909%;
-  --twelve-column: 8.33333333%;
-  --thirteen-column: 7.69230769%;
-  --fourteen-column: 7.14285714%;
-  --fifteen-column: 6.66666667%;
-  --sixteen-column: 6.25%;
   /*******************************
               States
   *******************************/
-  /*-------------------
-        Disabled
-  --------------------*/
-  --disabled-opacity: 0.45;
-
   /*-------------------
           Hover
   --------------------*/
